@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+span{
+    /**/
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#body{
+    overflow: hidden;
+}
+
+a{
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+}
+
+body{
+    background-color: #aeccc6;
+}
+
+.dark-mode{
+    background-color: #757a79;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    bottom: 50%;
+    left: 90%;
+    margin: 0px 25px;
+    padding: 0px 15px;
+    width: 90px;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0px;
+}
+
+.logo{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.navbar-menu ul li a{
+    padding: 0px 15px;
+    font-size: 35px;
+    opacity: 0.5;
+}
+
+.navbar-menu ul li a:hover{
+    opacity: 2;
+}
+
+.home{
+    margin: 50px 0px;
+    display: flex;
+}
+
+h1{
+    margin: 20px 0px;
+    opacity: 0.5;
+}
+
+.home p{
+    font-size: 35px;
+    width: 50%;
+}
+
+.image-container{
+    background-color: #bbe9db;
+    width: 700px;
+    margin: auto;
+    display: flex;
+}
+
+#menuIcon{
+    display: none;
+}
+
+.image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.image img{
+    width: 700px;
+    height: auto;
+    padding: 45px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.home p a{
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+#home-p2{
+    font-size: 23px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+}
+
+#home-p3{
+    font-size: 25px;
+    padding: 15px;
+}
+
+#home-p{
+    font-size: 35px;
+}
+
+hr{
+    color: black;
+    background-color: black;
+}
+
+@media only screen and (max-width:1300px){
+    #body{
+        overflow: visible;
+    }
+    
+    .logo{
+        font-size: 25px;
+    }
+
+    #title{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-top: 55px;
+    }
+
+    h1{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .home{
+        display: block;
+        overflow: scroll;
+    }
+    .home p{
+        width: 90%;
+    }
+    #home-p{
+        width: 100%;
+        font-size: 25px;
+        padding: 15px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #home-p2{
+        width: 100%;
+        font-size: 25px;
+        padding: 15px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #home-p3{
+        width: 100%;
+        font-size: 25px;
+        padding: 15px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .image-container{
+        width: 100%;
+        height: auto;
+    }
+    .image img{
+        width: 100%;
+        padding: 5px;
+    }
+    .links{
+        width: 90%;
+        display: flex;
+        position: inherit;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 15px;
+    }
+    .links p{
+        display: none;
+    }
+    
+    #menuItems{
+        display: none;
+    }
+
+    #menuItems.active{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: bisque;
+        top: 7%;
+        left: 5%;
+        transform: translateX(-50%, -50%);
+        margin: 20px 0px;
+    }
+    #menuIcon{
+        display: block;
+        font-size: 35px;
+        padding: 6px 0px;
+    }
+}
