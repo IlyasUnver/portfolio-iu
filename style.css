@@ -20,7 +20,7 @@ span{
 }
 
 #body{
-    overflow: hidden;
+    overflow: visible;
 }
 
 a{
