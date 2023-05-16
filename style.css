@@ -20,7 +20,7 @@ span{
 }
 
 #body{
-    overflow: visible;
+    overflow: hidden;
 }
 
 a{
@@ -84,16 +84,24 @@ h1{
 }
 
 .home p{
-    font-size: 35px;
+    font-size: 30px;
     width: 50%;
 }
 
 .image-container{
     background-color: #bbe9db;
-    width: 700px;
+    width: 50%;
     margin: auto;
     display: flex;
 }
+
+.image-container-2{
+    background-color: #bbe9db;
+    width: 30%;
+    margin: auto;
+    display: flex;
+}
+
 
 #menuIcon{
     display: none;
@@ -108,7 +116,7 @@ h1{
 }
 
 .image img{
-    width: 700px;
+    width: 100%;
     height: auto;
     align-items: center;
     justify-content: center;
@@ -126,7 +134,7 @@ h1{
     justify-content: center;
     text-align: center;
     align-items: center;
-    padding: 15px;
+    padding: 25px;
 }
 
 #home-p3{
@@ -136,11 +144,42 @@ h1{
 
 #home-p{
     font-size: 35px;
+    padding: 25px;
 }
 
 hr{
     color: black;
     background-color: black;
+}
+
+@media only screen and (max-width:1810px){
+    #home-p2{
+        font-size: 22px;
+    }
+    #home-p3{
+        font-size: 22px;
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width:1700px){
+    #home-p2{
+        font-size: 20px;
+    }
+    #home-p3{
+        font-size: 20px;
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width:1600px){
+    #home-p2{
+        font-size: 17px;
+    }
+    #home-p3{
+        font-size: 17px;
+        padding: 15px;
+    }
 }
 
 @media only screen and (max-width:1300px){
